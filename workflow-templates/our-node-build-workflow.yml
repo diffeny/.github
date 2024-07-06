@@ -1,0 +1,11 @@
+name: Node.js CI workflow
+on:
+  workflow_dispatch:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+jobs:
+  ci:
+    name: Deployment
+    run: echo "Deploying ..."
